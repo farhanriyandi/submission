@@ -6,8 +6,8 @@ import streamlit as st
 sns.set(style='dark')
 
 #load data
-day_df = pd.read_csv('https://raw.githubusercontent.com/farhanriyandi/bike-sharing/main/submission/data/day.csv')
-hour_df = pd.read_csv('https://raw.githubusercontent.com/farhanriyandi/bike-sharing/main/submission/data/hour.csv')
+day_df = pd.read_csv('https://raw.githubusercontent.com/farhanriyandi/submission/main/data/day.csv')
+hour_df = pd.read_csv('https://raw.githubusercontent.com/farhanriyandi/submission/main/data/hour.csv')
 
 day_df.drop(columns='instant', inplace=True)
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
